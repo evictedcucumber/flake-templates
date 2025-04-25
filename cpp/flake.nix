@@ -12,7 +12,7 @@
   in {
     devShells.${system}.default = pkgs.mkShell.override {stdenv = pkgs.clang19Stdenv;} {
       name = "";
-      packages = with pkgs; [cmake clang-tools];
+      packages = with pkgs; [clang-tools];
     };
   };
 }
